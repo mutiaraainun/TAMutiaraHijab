@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugasakhir.FXMLPasminaController">
+    <children>
+      <AnchorPane layoutY="86.0" prefHeight="325.0" prefWidth="286.0" style="-fx-background-color: #ffc0cb;">
+         <children>
+            <Label layoutX="91.0" layoutY="7.0" prefHeight="12.0" prefWidth="104.0" text="Data Pemesan">
+               <font>
+                  <Font name="Alba Matter" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="55.0" prefHeight="26.0" prefWidth="104.0" text="Nama Pemesan ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="namapemesan" layoutX="50.0" layoutY="81.0" prefHeight="31.0" prefWidth="225.0" />
+            <Label layoutX="50.0" layoutY="123.0" text="No.Telepon">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="telp" layoutX="50.0" layoutY="143.0" prefHeight="31.0" prefWidth="225.0" />
+            <TextField fx:id="alamat" layoutX="49.0" layoutY="211.0" prefHeight="31.0" prefWidth="225.0" />
+            <Label layoutX="50.0" layoutY="191.0" text="Alamat">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="260.0" text="Tanggal">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="tgl" layoutX="49.0" layoutY="280.0" prefHeight="31.0" prefWidth="225.0" />
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="14.0" layoutY="84.0">
+               <image>
+                  <Image url="@../gambar/avatar-1299805_640.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="14.0" layoutY="143.0">
+               <image>
+                  <Image url="@../gambar/old_phone-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="14.0" layoutY="214.0">
+               <image>
+                  <Image url="@../gambar/location-icon-png-4237.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="14.0" layoutY="280.0">
+               <image>
+                  <Image url="@../gambar/weekly-calendar_icon-icons.com_56749.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-2.0" prefHeight="88.0" prefWidth="573.0" style="-fx-background-color: #db7093;">
+         <children>
+            <Label layoutX="174.0" layoutY="9.0" prefHeight="37.0" prefWidth="261.0" text="“Mutiara Hijab”">
+               <font>
+                  <Font name="Birds of Paradise - Personal use Only" size="34.0" />
+               </font>
+            </Label>
+            <Separator layoutX="164.0" layoutY="62.0" prefHeight="4.0" prefWidth="225.0" />
+            <ImageView fitHeight="72.0" fitWidth="79.0" layoutX="429.0" layoutY="9.0">
+               <image>
+                  <Image url="@../gambar/cashier_icon-icons.com_53629.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="411.0" prefHeight="80.0" prefWidth="573.0" style="-fx-background-color: #ff69b4;">
+         <children>
+            <Button fx:id="JFXcombokeluar" layoutX="240.0" layoutY="25.0" mnemonicParsing="false" onAction="#keluar" prefHeight="26.0" prefWidth="93.0" style="-fx-background-color: #ff1493;" text="Back">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="JFXcombosimpan" layoutX="433.0" layoutY="25.0" mnemonicParsing="false" onAction="#simpan" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #ff1493;" text="Save">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="JFXcombobersih" layoutX="60.0" layoutY="25.0" mnemonicParsing="false" onAction="#bersih" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: #ff1493;" text="Clear">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="286.0" layoutY="86.0" prefHeight="325.0" prefWidth="286.0" style="-fx-background-color: #ffb6c1;">
+         <children>
+            <Label layoutX="101.0" layoutY="7.0" text="Data Barang">
+               <font>
+                  <Font name="Alba Matter" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="62.0" text="Kode Barang">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="66.0" layoutY="119.0" text="Nama Barang">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="66.0" layoutY="195.0" text="Kategori">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="66.0" layoutY="258.0" text="Harga">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <TextField fx:id="kode" layoutX="69.0" layoutY="82.0" prefHeight="25.0" prefWidth="190.0" />
+            <TextField fx:id="namabarang" layoutX="66.0" layoutY="139.0" prefHeight="25.0" prefWidth="190.0" />
+            <TextField fx:id="harga" layoutX="66.0" layoutY="286.0" prefHeight="25.0" prefWidth="190.0" />
+            <JFXComboBox fx:id="pilihkategori" layoutX="66.0" layoutY="215.0" onAction="#kategori" prefHeight="25.0" prefWidth="190.0" promptText="Pilih Kategori" />
+            <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="14.0" layoutY="283.0">
+               <image>
+                  <Image url="@../gambar/money-5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="18.0" layoutY="212.0">
+               <image>
+                  <Image url="@../gambar/List_alt_font_awesome.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="21.0" layoutY="82.0">
+               <image>
+                  <Image url="@../gambar/code-working_icon-icons.com_50416.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="21.0" layoutY="139.0">
+               <image>
+                  <Image url="@../gambar/download.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

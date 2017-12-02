@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tugasakhir.AwalController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="82.0" prefHeight="268.0" prefWidth="535.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <ImageView fitHeight="232.0" fitWidth="495.0" layoutX="19.0" layoutY="18.0">
+               <image>
+                  <Image url="@../gambar/34.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="90.0" layoutX="19.0">
+               <image>
+                  <Image url="@../gambar/free-tag-png-cash-free-price-sale-tag-icon-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="128.0" fitWidth="99.0" layoutX="422.0" layoutY="6.0">
+               <image>
+                  <Image url="@../gambar/ribbon-online-sale-shopping-label-tag-valentine-day-31e602814d86d64e-512x512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="249.0" layoutY="-13.0" prefHeight="54.0" prefWidth="124.0" text="WELCOME">
+         <font>
+            <Font name="Alba Super" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="38.0" prefHeight="25.0" prefWidth="198.0" text="&quot;Mutiara Hijab&quot;">
+         <font>
+            <Font name="Birds of Paradise - Personal use Only" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonmasuk" layoutX="478.0" layoutY="352.0" mnemonicParsing="false" onAction="#masuk" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: lightgrey;" text="Come">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="212.0" layoutY="38.0" prefHeight="8.0" prefWidth="198.0" />
+      <ImageView fitHeight="69.0" fitWidth="71.0" layoutX="114.0" layoutY="7.0">
+         <image>
+            <Image url="@../gambar/open_sign_shop_store_welcome_label_door_market_cafe_retail_board_signboard_service_flat_design_icon-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="167.0" layoutY="361.0">
+         <image>
+            <Image url="@../gambar/37156-200.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="36.0" layoutX="15.0" layoutY="361.0">
+         <image>
+            <Image url="@../gambar/Circle-icons-contacts.svg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="203.0" layoutY="370.0" text="Jln. Sutan Syahrir no.09, Malang" />
+      <Label layoutX="62.0" layoutY="370.0" text="Siska(0867543269)" />
+   </children>
+</AnchorPane>
